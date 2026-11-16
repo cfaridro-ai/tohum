@@ -1,0 +1,19 @@
+/* TOKENS: lo único que tocas para cambiar la identidad visual de todo el sitio */
+:root {
+  /* Color */
+  --bg: #040605;          /* casi negro con tinte verde */
+  --fg: #e8e4d9;          /* blanco hueso */
+  --dim: #7d887f;         /* texto secundario */
+  --accent: #8fe000;      /* verde Xbox/Matrix. Prueba #c9432c para el rojo óxido */
+  --cold: #3ea6c9;        /* azul frío de tu referencia */
+  --line: rgba(232, 228, 217, .18);
+
+  /* Tipografía */
+  --font-display: 'Unbounded', 'Arial Black', sans-serif;
+  --font-body: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* Espaciado (base 8px) */
+  --s1: 8px; --s2: 16px; --s3: 24px; --s4: 32px;
+
+  --ease: cubic-bezier(.2, .8, .2, 1);
+}

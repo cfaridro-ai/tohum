@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOHUM — CARLOS FARID ALVAREZ ROJO</title>
+  <!-- Fuentes: Unbounded (display, con carácter) + JetBrains Mono (cuerpo, técnica) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- CAPAS DE ATMÓSFERA (van detrás y encima del contenido) -->
+  <canvas id="rain"></canvas>
+  <div class="grain"></div>
+  <div class="scan"></div>
+
+  <!-- CURSOR PERSONALIZADO: punto + anillo con retraso -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"><span></span></div>
+
+  <!-- PANTALLA DE ARRANQUE -->
+  <div id="boot"><pre id="boot-text"></pre></div>
+
+  <!-- BARRA SUPERIOR -->
+  <header class="top">
+    <a class="mark" href="#" data-cursor="TOHUM">TOHUM<sup>®</sup></a>
+    <div class="status"><i class="blink"></i> SISTEMA EN LÍNEA · <time id="clock"></time></div>
+  </header>
+
+  <!-- ESCENARIO: título a la izquierda, panel de contenido a la derecha -->
+  <main class="dash">
+    <div class="orb"></div>
+
+    <section class="hero">
+      <h1 class="title" data-text="TOHUM" data-cursor="CARLOS">TOHUM</h1>
+      <p class="tagline">Multimedia Designer & Visual Artist</p>
+    </section>
+
+    <section class="panels">
+      
+
+      <article class="panel">
+        <span class="code">[00]</span>
+        <h2>Trabajo</h2>
+        <p>Motion graphics, diseño gráfico y web.</p>
+        <div class="cells">
+          <a class="cell" href="#grafico" data-screen="grafico" data-cursor="VER">Gráfico</a>
+          <a class="cell" href="#" data-cursor="VER">Web</a>
+          <a class="cell" href="#" data-cursor="VER">04</a>
+          <a class="cell" href="#" data-cursor="VER">Proyecto 05</a>
+          <a class="cell" href="#" data-cursor="VER">Proyecto 06</a>
+          <a class="cell" href="#" data-cursor="VER">DAFTA / EL PÉNDULO</a>
+          <a class="cell" href="#" data-cursor="VER">+ próximo</a>
+        </div>
+      </article>
+
+      <article class="panel">
+        <span class="code">[01]</span>
+        <h2>Offtempo</h2>
+        <p>Parte de la manera en que sentimos, experimentamos el mundo y construimos nuestra propia identidad. Es una invitación a crear desde nuestras experiencias, confiar en nuestras ideas y encontrar una forma propia de expresarnos.
+
+Más que una marca de ropa, OFFTEMPO busca transformar emociones y experiencias personales en un lenguaje visual.
+
+O.F.F.T.E.M.P.O.</p>
+        <a class="link" href="https://cfaridro-ai.github.io/carlosalvarez/index.html" target="_blank" rel="noopener" data-cursor="ABRIR">Ver caso →</a>
+      </article>
+
+      <article class="panel">
+        <span class="code">[02]</span>
+        <h2>Archivo</h2>
+        <p>Bocetos, referencias, capturas de proceso. Lo crudo antes de lo pulido.</p>
+      </article>
+
+      <article class="panel">
+        <span class="code">[03]</span>
+        <h2>Sobre TOHUM</h2>
+        <p>Estudiante de diseño multimedia. Judo, música, literatura y gráfica urbana alimentan la misma raíz.</p>
+      </article>
+
+      <article class="panel">
+        <span class="code">[04]</span>
+        <h2>Contacto</h2>
+        <p>¿Proyecto, colaboración o freelance?</p>
+        <a class="link" href="mailto:cfaridro@gmail.com" data-cursor="ESCRIBIR">cfaridro@gmail.com →</a>
+      </article>
+    </section>
+  </main>
+
+  <!-- MENÚ INFERIOR (estilo dashboard de Xbox): clic o flechas ← → -->
+  <nav class="blades">
+    <button class="blade" data-cursor="01">00 Trabajo</button>
+    <button class="blade" data-cursor="02">01 Offtempo</button>
+    <button class="blade" data-cursor="03">02 Archivo</button>
+    <button class="blade" data-cursor="04">03 Sobre</button>
+    <button class="blade" data-cursor="05">04 Contacto</button>
+  </nav>
+  
+  <!-- PANTALLA: GRÁFICO -->
+  <section class="screen" id="screen-grafico">
+    <header class="screen-head">
+      <button class="screen-back" data-cursor="VOLVER">← Volver</button>
+      <span class="code">[00.1]</span>
+    </header>
+
+    <h2 class="screen-title">Gráfico</h2>
+    <p class="screen-intro">Identidad, logotipos, ilustración y gráfica urbana.</p>
+
+    <div class="works">
+      <figure class="work" data-cursor="VER">
+        <div class="thumb"><!-- <img src="assets/grafico/01.jpg" alt="Descripción del trabajo"> --></div>
+        <figcaption><b>01</b> Título del trabajo <span>Branding · 2026</span></figcaption>
+      </figure>
+
+      <figure class="work" data-cursor="VER">
+        <div class="thumb"></div>
+        <figcaption><b>02</b> Título del trabajo <span>Logotipo · 2026</span></figcaption>
+      </figure>
+
+      <figure class="work" data-cursor="VER">
+        <div class="thumb"></div>
+        <figcaption><b>03</b> Título del trabajo <span>Ilustración · 2026</span></figcaption>
+      </figure>
+
+      <figure class="work" data-cursor="VER">
+        <div class="thumb"></div>
+        <figcaption><b>04</b> Título del trabajo <span>Cartel · 2026</span></figcaption>
+      </figure>
+
+      <figure class="work" data-cursor="VER">
+        <div class="thumb"></div>
+        <figcaption><b>05</b> Título del trabajo <span>Branding · 2026</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
